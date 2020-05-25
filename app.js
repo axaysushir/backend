@@ -43,14 +43,14 @@ app.use("/api", stripeRoutes);
 app.use("/api", paymentRoutes);
 
 // serve static assets if in production
-if (process.env.NODE_ENV === "production") {
+// if (process.env.NODE_ENV === "production") {
   // set static folder
-  app.use(express.static("frontend/build"));
+//   app.use(express.static("frontend/build"));
 
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
-  });
-}
+//   app.get("*", (req, res) => {
+//     res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
+//   });
+// }
 
 const port = process.env.PORT || 8000;
 
