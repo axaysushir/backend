@@ -7,7 +7,7 @@
     "node": "10.15.x"
   },
   "scripts": {
-    "start": "npm install && node app.js"
+    "start": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
