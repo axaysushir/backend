@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "engines": {
+    "node": "10.15.x"
+  },
   "scripts": {
-    "start": "npm install && node app.js",
-    "heroku-postbuild": "cd frontend && npm install && npm run build"
+    "start": "npm install && node app.js"
   },
   "keywords": [],
   "author": "",
